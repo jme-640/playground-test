@@ -30,11 +30,31 @@
       </div>
       <div class="hero-art" aria-hidden="true">
         <svg viewBox="0 0 200 240" class="pot-svg">
-          <path d="M100 150 C 60 120, 40 70, 70 30 C 85 70, 95 100, 100 150" class="leaf l1"/>
-          <path d="M100 150 C 140 120, 165 75, 140 25 C 120 65, 105 100, 100 150" class="leaf l2"/>
-          <path d="M100 150 C 90 110, 95 60, 105 10 C 115 60, 110 110, 100 150" class="leaf l3"/>
-          <path d="M100 150 C 70 140, 30 135, 15 110 C 50 108, 80 125, 100 150" class="leaf l4"/>
-          <path d="M100 150 C 130 140, 170 138, 188 115 C 150 110, 120 125, 100 150" class="leaf l5"/>
+          <g class="cactus">
+            <rect x="48" y="62" width="20" height="52" rx="10"/>
+            <rect x="48" y="96" width="44" height="20" rx="10"/>
+            <rect x="132" y="44" width="20" height="54" rx="10"/>
+            <rect x="108" y="80" width="44" height="20" rx="10"/>
+            <rect x="80" y="36" width="40" height="122" rx="20"/>
+          </g>
+          <g class="rib">
+            <line x1="93" y1="46" x2="93" y2="150"/>
+            <line x1="107" y1="46" x2="107" y2="150"/>
+            <line x1="58" y1="70" x2="58" y2="106"/>
+            <line x1="142" y1="52" x2="142" y2="90"/>
+          </g>
+          <g class="spine">
+            <circle cx="86" cy="60" r="1.6"/><circle cx="100" cy="72" r="1.6"/><circle cx="114" cy="88" r="1.6"/>
+            <circle cx="86" cy="104" r="1.6"/><circle cx="100" cy="120" r="1.6"/><circle cx="114" cy="136" r="1.6"/>
+            <circle cx="53" cy="78" r="1.6"/><circle cx="63" cy="94" r="1.6"/>
+            <circle cx="137" cy="60" r="1.6"/><circle cx="147" cy="76" r="1.6"/>
+          </g>
+          <g class="flower">
+            <ellipse cx="100" cy="28" rx="6" ry="11"/>
+            <ellipse cx="100" cy="28" rx="6" ry="11" transform="rotate(60 100 34)"/>
+            <ellipse cx="100" cy="28" rx="6" ry="11" transform="rotate(-60 100 34)"/>
+            <circle cx="100" cy="34" r="4.5" class="flower-center"/>
+          </g>
           <rect x="55" y="150" width="90" height="16" rx="4" class="rim"/>
           <path d="M62 166 L 138 166 L 128 232 L 72 232 Z" class="pot"/>
         </svg>

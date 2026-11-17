@@ -102,19 +102,20 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1rem, 5vw, 2rem); }
   background: radial-gradient(circle at 50% 55%, #e4ecd9 0%, transparent 70%);
 }
 .pot-svg { width: min(100%, 320px); height: auto; }
-.leaf { fill: var(--leaf-a); }
-.l2, .l4 { fill: var(--leaf-b); }
-.l3 { fill: var(--green); }
+.cactus rect { fill: var(--leaf-a); }
+.rib line { stroke: var(--green); stroke-width: 2; stroke-linecap: round; opacity: .55; }
+.spine circle { fill: #f3eedf; }
+.flower ellipse { fill: #e8708a; }
+.flower-center { fill: #f6c24a; }
 .pot { fill: var(--terracotta); }
 .rim { fill: #a9552f; }
-.l1, .l2, .l3, .l4, .l5 { transform-origin: 100px 150px; animation: sway 6s ease-in-out infinite; }
-.l2, .l5 { animation-delay: -3s; }
-@keyframes sway {
-  0%, 100% { transform: rotate(-2deg); }
-  50% { transform: rotate(2deg); }
+.flower { transform-origin: 100px 34px; animation: bloom 5s ease-in-out infinite; }
+@keyframes bloom {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.12) rotate(8deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .leaf { animation: none; }
+  .flower { animation: none; }
   html { scroll-behavior: auto; }
 }
 
