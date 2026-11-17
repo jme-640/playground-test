@@ -102,11 +102,20 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1rem, 5vw, 2rem); }
   background: radial-gradient(circle at 50% 55%, #e4ecd9 0%, transparent 70%);
 }
 .pot-svg { width: min(100%, 320px); height: auto; }
-.cactus rect { fill: var(--leaf-a); }
-.rib line { stroke: var(--green); stroke-width: 2; stroke-linecap: round; opacity: .55; }
-.spine circle { fill: #f3eedf; }
+.cactus rect { fill: #f2c230; }
+.rib line { stroke: #c08a12; stroke-width: 2; stroke-linecap: round; opacity: .6; }
+.spine circle { fill: #7a4f1a; }
 .flower ellipse { fill: #e8708a; }
-.flower-center { fill: #f6c24a; }
+.flower-center { fill: #e8862a; }
+.telescope .leg { stroke: #3a3f4a; stroke-width: 2.2; stroke-linecap: round; }
+.telescope .tube { fill: #2d3a5a; }
+.telescope .scope-dark { fill: #1c2236; }
+.telescope .brass { fill: #c9a24a; }
+.star { fill: #d99a12; transform-origin: 192px 164px; animation: twinkle 2.4s ease-in-out infinite; }
+@keyframes twinkle {
+  0%, 100% { opacity: .35; transform: scale(.8); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
 .pot { fill: var(--terracotta); }
 .rim { fill: #a9552f; }
 .flower { transform-origin: 100px 34px; animation: bloom 5s ease-in-out infinite; }
@@ -115,7 +124,7 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1rem, 5vw, 2rem); }
   50% { transform: scale(1.12) rotate(8deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .flower { animation: none; }
+  .flower, .star { animation: none; }
   html { scroll-behavior: auto; }
 }
 
