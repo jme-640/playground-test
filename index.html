@@ -17,6 +17,7 @@
       <a href="#plants">Plants</a>
       <a href="#care">Care</a>
       <a href="#trouble">Troubleshooting</a>
+      <a href="#game">Play</a>
     </nav>
   </header>
 
@@ -160,6 +161,15 @@
       </table>
     </section>
 
+    <section id="game" class="section game">
+      <h2>Take a break: Sprout Hop</h2>
+      <p class="section-intro">Help the little sprout jump over cacti and snails. Press <kbd>Space</kbd> / <kbd>↑</kbd> or tap the field to jump.</p>
+      <div class="game-wrap">
+        <canvas id="sprout-game" width="800" height="220" aria-label="Sprout Hop game. Press space or tap to jump."></canvas>
+        <div class="game-hud"><span>Score <b id="game-score">0</b></span><span>Best <b id="game-best">0</b></span></div>
+      </div>
+    </section>
+
     <section class="tip">
       <p><strong>Pro tip:</strong> Before bringing a new plant home, check whether it's safe for pets. Pothos, peace lilies, and ZZ plants are toxic if chewed by cats or dogs; spider plants are a pet-friendly choice.</p>
     </section>
@@ -168,5 +178,6 @@
   <footer class="site-footer">
     <p>Leaf &amp; Light · Made with plain HTML &amp; CSS · Grow something today.</p>
   </footer>
+  <script src="game.js"></script>
 </body>
 </html>
